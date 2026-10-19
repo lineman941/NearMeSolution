@@ -1,0 +1,412 @@
+{
+  "listings": [
+    {
+      "name": "Tall Timber Tree Service & Stump Grinding",
+      "services": ["stump-grinding", "tree-removal"],
+      "towns": ["perry"],
+      "phone": "(850) 838-5923",
+      "website": "https://tall-timber-tree-service-stump-grinding.business.site/",
+      "facebook": "https://www.facebook.com/talltimberservice/",
+      "blurb": "Perry-based tree company offering stump grinding, tree trimming and removal, tractor work, bush hogging and bucket truck service with free estimates.",
+      "source": "https://www.mapquest.com/us/florida/tall-timber-tree-service-stump-grinding-350795253"
+    },
+    {
+      "name": "Sandhill Tree, Stump and Brush",
+      "services": ["stump-grinding", "tree-removal"],
+      "towns": ["perry"],
+      "phone": "(850) 672-3781",
+      "blurb": "Stump removal, brush clearing, gravel driveways, easement repair, light earth moving and tractor work; quotes given in person.",
+      "source": "https://perrynewspapers.com/wp-content/uploads/2026/04/PNH00403A016.pdf"
+    },
+    {
+      "name": "A to Z Lawn & Farm Services",
+      "services": ["tree-removal"],
+      "towns": ["perry"],
+      "phone": "(850) 838-5996",
+      "blurb": "Licensed and insured outfit doing tree trimming and removal, tractor work, bush hog mowing, harrowing and complete lawn services.",
+      "source": "https://perrynewspapers.com/wp-content/uploads/2026/04/PNH00403A016.pdf"
+    },
+    {
+      "name": "Padgett's Tree Service",
+      "services": ["tree-removal"],
+      "towns": ["perry"],
+      "phone": "(850) 843-0708",
+      "blurb": "Tree service located on E US 27 in Perry, listed with about 20 years in business.",
+      "source": "https://www.yellowpages.com/perry-fl/tree-service"
+    },
+    {
+      "name": "J D's Tree Service and Lawn Care",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["perry"],
+      "phone": "(850) 838-1280",
+      "blurb": "Locally owned full-service tree company in Perry with 30-plus years of experience in tree and stump removal.",
+      "source": "https://www.yellowpages.com/perry-fl/tree-service"
+    },
+    {
+      "name": "Arborist John F Sesock Tree Removal Stump Grinding",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["perry"],
+      "phone": "(850) 584-2027",
+      "blurb": "Perry arborist offering tree removal and stump grinding, listed with about 31 years in business.",
+      "source": "https://www.yellowpages.com/perry-fl/tree-service"
+    },
+    {
+      "name": "DEAR Service",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["perry"],
+      "phone": "(850) 223-3380",
+      "blurb": "Perry-based business listed under tree service and stump removal.",
+      "source": "https://www.yellowpages.com/madison-fl/stump-removal-grinding"
+    },
+    {
+      "name": "Reed Tree Service LLC",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["tallahassee", "perry", "monticello"],
+      "phone": "(850) 888-5603",
+      "website": "https://reedtreeservice.com",
+      "facebook": "https://www.facebook.com/profile.php?id=61580785025188",
+      "blurb": "Owner-operated Tallahassee tree company serving North Florida since 2016 with removal, pruning, storm cleanup, stump grinding and crane work.",
+      "source": "https://reedtreeservice.com"
+    },
+    {
+      "name": "Miller's Tree Service",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["tallahassee", "monticello"],
+      "phone": "(850) 789-0577",
+      "website": "https://www.millertreesrv.com",
+      "facebook": "https://www.facebook.com/millerstreesrv",
+      "blurb": "Tallahassee tree care company since 1999 with nine ISA Certified Arborists, serving Leon, Wakulla, Gadsden and Jefferson counties.",
+      "source": "https://www.millertreesrv.com/services/stump-grinding"
+    },
+    {
+      "name": "Coste Tree Service",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["tallahassee"],
+      "phone": "(850) 694-2796",
+      "website": "https://costetrees.com/",
+      "blurb": "Locally owned, licensed and insured Tallahassee company doing tree removal, trimming, stump grinding and storm response with free estimates.",
+      "source": "https://costetrees.com/"
+    },
+    {
+      "name": "Mr. Stump Stump Grinding & Tree Service",
+      "services": ["stump-grinding", "tree-removal"],
+      "towns": ["tallahassee"],
+      "phone": "(850) 509-8530",
+      "website": "https://www.mrstump.com",
+      "facebook": "https://facebook.com/mrstumptreeservice",
+      "blurb": "Leon County stump grinding and tree service also offering land clearing, brush removal and emergency storm damage work.",
+      "source": "https://www.mrstump.com/the-best-way-to-get-rid-of-tree-stumps-in-tallahassee"
+    },
+    {
+      "name": "Stump Grinding Tallahassee",
+      "services": ["stump-grinding", "tree-removal"],
+      "towns": ["tallahassee"],
+      "phone": "(850) 404-1402",
+      "website": "https://stumpgrindingtallahassee.com/",
+      "facebook": "https://www.facebook.com/stumpgrindingtallahassee",
+      "blurb": "Stump grinding specialists serving Tallahassee and the Big Bend, also offering tree removal, light tractor work and debris hauling.",
+      "source": "https://stumpgrindingtallahassee.com/"
+    },
+    {
+      "name": "Jason Hamilton Tree Service",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["tallahassee"],
+      "phone": "(850) 938-8733",
+      "website": "https://www.jasonhamiltontreeservice.com/",
+      "blurb": "Tallahassee tree service with over 15 years of experience, an ISA Certified Arborist on staff and free estimates.",
+      "source": "https://www.jasonhamiltontreeservice.com/"
+    },
+    {
+      "name": "O'Leary's Tree Services Tallahassee",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["tallahassee"],
+      "phone": "(850) 331-0217",
+      "website": "https://treeservicestallahassee.com/",
+      "blurb": "Licensed, bonded and insured Tallahassee tree company with certified arborists offering trimming, removal, stump grinding and land clearing.",
+      "source": "https://treeservicestallahassee.com/"
+    },
+    {
+      "name": "Webb's Tree Service LLC",
+      "services": ["stump-grinding", "tree-removal"],
+      "towns": ["tallahassee"],
+      "website": "https://webbstreeservice.voolt.com",
+      "blurb": "Locally owned Tallahassee tree care provider offering stump grinding, trimming, removal, planting and cabling.",
+      "source": "https://webbstreeservice.voolt.com"
+    },
+    {
+      "name": "Affordable Tree Service by Mark Hicks",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["tallahassee", "madison", "perry"],
+      "phone": "(850) 933-4149",
+      "website": "https://affordabletreeservicetallahassee.com",
+      "facebook": "https://www.facebook.com/AffordableTreeServiceTallahassee/",
+      "blurb": "Family-owned tree company serving Tallahassee and nearby areas for over 30 years with removal, trimming, stump grinding and debris hauling.",
+      "source": "https://affordabletreeservicetallahassee.com"
+    },
+    {
+      "name": "Big Bend Tree Service LLC",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["tallahassee", "madison"],
+      "phone": "(850) 576-2912",
+      "website": "https://bigbendtreeservicellc.com",
+      "facebook": "https://www.facebook.com/1805830509697867",
+      "blurb": "Family-owned Tallahassee tree service operating since 1986 with 24/7 emergency service, tree removal and stump grinding.",
+      "source": "https://bigbendtreeservicellc.com"
+    },
+    {
+      "name": "Morgan Tree and Debris",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["live-oak", "madison"],
+      "phone": "(386) 249-0472",
+      "website": "https://morgantreeanddebris.com/",
+      "facebook": "https://www.facebook.com/morgantreeanddebris",
+      "blurb": "Locally owned Live Oak tree company serving a 50-mile radius including Madison with removal, trimming, stump grinding and land clearing.",
+      "source": "https://morgantreeanddebris.com/"
+    },
+    {
+      "name": "Precision Tree Care & Removal, LLC",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["live-oak"],
+      "phone": "(386) 688-5173",
+      "website": "https://www.precisiontreecareremoval.com/",
+      "blurb": "Live Oak company offering tree removal, trimming, pruning, brush cutting, stump grinding and storm debris haul-off.",
+      "source": "https://www.precisiontreecareremoval.com/"
+    },
+    {
+      "name": "Kari's Tree Service LLC",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["live-oak"],
+      "phone": "(386) 697-5668",
+      "blurb": "Family-run North Florida tree company since 2022 serving Suwannee and Columbia counties with stump grinding, removal and 24/7 storm response.",
+      "source": "https://business.google.com/v/_/AKsrIN02uT0GROzK7yy_Yb1mAp1t8m6gcEWJK-cqObWEBff8Z-nFPdkhRLcF/799c/_"
+    },
+    {
+      "name": "Tree Recycling of Florida",
+      "services": ["stump-grinding"],
+      "towns": ["live-oak"],
+      "phone": "(386) 330-2258",
+      "blurb": "Live Oak business on Ohio Ave N listed for stump removal and grinding.",
+      "source": "https://www.yellowpages.com/madison-fl/stump-removal-grinding"
+    },
+    {
+      "name": "Able Outdoors",
+      "services": ["stump-grinding", "handyman"],
+      "towns": ["madison"],
+      "phone": "(850) 673-1286",
+      "blurb": "Madison business with about 24 years in operation offering stump removal, fence repair and landscaping.",
+      "source": "https://www.yellowpages.com/madison-fl/stump-removal-grinding"
+    },
+    {
+      "name": "Tree Toping",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["madison"],
+      "phone": "(850) 997-6777",
+      "blurb": "Greenville-based service in Madison County offering tree topping and stump removal.",
+      "source": "https://www.yellowpages.com/madison-fl/stump-removal-grinding"
+    },
+    {
+      "name": "Affordable Stump Grinding",
+      "services": ["stump-grinding"],
+      "towns": ["monticello"],
+      "phone": "(850) 997-2181",
+      "website": "https://stumpgrindingintallahasseefl.com/",
+      "blurb": "Monticello-based stump grinding business clearing residential and commercial stumps to prepare land for landscaping or construction.",
+      "source": "https://www.mapquest.com/us/florida/affordable-stump-grinding-363850164"
+    },
+    {
+      "name": "Mike Gibson Tree Service",
+      "services": ["tree-removal", "stump-grinding"],
+      "towns": ["monticello"],
+      "phone": "(850) 933-3237",
+      "website": "https://mgibsontree.com/",
+      "blurb": "Monticello tree care provider focused on tree health and sustainable practices, offering pruning, hazardous tree removal and stump grinding.",
+      "source": "https://www.mapquest.com/us/florida/mike-gibson-tree-service-371654174"
+    },
+    {
+      "name": "Tallahassee Mobile Mechanic",
+      "services": ["mobile-mechanic"],
+      "towns": ["tallahassee", "monticello"],
+      "phone": "(850) 726-3411",
+      "website": "https://tallymobilemechanic.com/",
+      "blurb": "Mobile auto repair traveling to homes, offices and roadsides across Leon, Gadsden, Wakulla and Jefferson counties for brakes, diagnostics and more.",
+      "source": "https://tallymobilemechanic.com/"
+    },
+    {
+      "name": "Mobile Mechanic Pros of Tallahassee",
+      "services": ["mobile-mechanic"],
+      "towns": ["tallahassee", "monticello"],
+      "phone": "(850) 909-8649",
+      "website": "https://www.mobilemechanicprosoftallahassee.com/",
+      "blurb": "Brings certified mechanics to driveways and parking lots in Tallahassee, Monticello and nearby towns for tune-ups, brakes, AC and diagnostics.",
+      "source": "https://www.mobilemechanicprosoftallahassee.com/"
+    },
+    {
+      "name": "Tallahassee RPM Mobile Mechanic",
+      "services": ["mobile-mechanic"],
+      "towns": ["tallahassee", "monticello"],
+      "phone": "(850) 970-2801",
+      "website": "https://tallahasseeflmobilemechanic.com/",
+      "blurb": "Licensed and insured mobile mechanic providing onsite engine, brake, A/C, tire and electrical repair in Leon County and nearby areas including Monticello.",
+      "source": "https://tallahasseeflmobilemechanic.com/"
+    },
+    {
+      "name": "Mr. B's Mobile Auto Repair",
+      "services": ["mobile-mechanic"],
+      "towns": ["tallahassee"],
+      "facebook": "https://www.facebook.com/mrbautofix/",
+      "blurb": "Mobile auto repair business in the Tallahassee area with a public Facebook page.",
+      "source": "https://www.facebook.com/mrbautofix/"
+    },
+    {
+      "name": "S.A.S. Auto Service",
+      "services": ["mobile-mechanic"],
+      "towns": ["perry"],
+      "phone": "(800) 788-4575",
+      "website": "https://sasautoservice.com",
+      "blurb": "Specializes in mobile auto repair, bringing service to the customer's location in the Perry area.",
+      "source": "https://www.yellowpages.com/perry-fl/auto-repair-service"
+    },
+    {
+      "name": "Handyman Experts",
+      "services": ["handyman"],
+      "towns": ["perry"],
+      "phone": "(850) 584-3776",
+      "blurb": "Perry handyman on E Drew St providing general repair and maintenance for residential and commercial properties.",
+      "source": "https://www.mapquest.com/us/florida/handyman-experts-376814798"
+    },
+    {
+      "name": "God Honest Handyman LLC",
+      "services": ["handyman"],
+      "towns": ["perry"],
+      "facebook": "https://www.facebook.com/GodHonestHandyman/",
+      "blurb": "Perry, FL handyman business with a public Facebook page.",
+      "source": "https://www.facebook.com/GodHonestHandyman/"
+    },
+    {
+      "name": "Perry's Handyman Service",
+      "services": ["handyman"],
+      "towns": ["perry"],
+      "facebook": "https://www.facebook.com/p/Perrys-Handyman-Service-100063519820232/",
+      "blurb": "Handyman service in Perry, FL with a public Facebook page.",
+      "source": "https://www.facebook.com/p/Perrys-Handyman-Service-100063519820232/"
+    },
+    {
+      "name": "Tallahassee Home Maintenance",
+      "services": ["handyman"],
+      "towns": ["tallahassee", "perry", "monticello"],
+      "phone": "(850) 661-7845",
+      "website": "https://www.leoncountyhandyman.com/",
+      "facebook": "https://www.facebook.com/tally.home.maintenance/",
+      "blurb": "Handyman company serving Leon, Wakulla, Gadsden, Jefferson and Taylor counties with remodeling, painting, appliance repair and accessibility work.",
+      "source": "https://www.leoncountyhandyman.com/"
+    },
+    {
+      "name": "Santa's Little Helpers, LLC",
+      "services": ["handyman"],
+      "towns": ["tallahassee"],
+      "phone": "(850) 297-2468",
+      "website": "https://santaslittlehelpersllc.com/",
+      "facebook": "https://www.facebook.com/profile.php?id=100028103306393",
+      "blurb": "Licensed and insured Tallahassee handyman company handling wood rot, drywall, carpentry, decks and small repairs for homes and businesses.",
+      "source": "https://santaslittlehelpersllc.com/"
+    },
+    {
+      "name": "HK & Sons Handyman",
+      "services": ["handyman"],
+      "towns": ["tallahassee"],
+      "phone": "(850) 655-8081",
+      "website": "https://hksons.net/",
+      "blurb": "Family-run, veteran-owned Tallahassee handyman doing home repairs, assembly, outdoor work, minor electrical and seasonal upkeep.",
+      "source": "https://hksons.net/"
+    },
+    {
+      "name": "AB Home Repair Service",
+      "services": ["handyman"],
+      "towns": ["tallahassee", "monticello"],
+      "phone": "(448) 200-8176",
+      "website": "https://homerepairab.com/",
+      "facebook": "https://www.facebook.com/profile.php?id=61561067895623",
+      "blurb": "Locally owned, licensed and insured handyman serving Tallahassee, Monticello, Havana and Quincy since 2019 with repairs, carpentry and deck work.",
+      "source": "https://homerepairab.com/"
+    },
+    {
+      "name": "A&P Handyman Home Services LLC",
+      "services": ["handyman"],
+      "towns": ["tallahassee"],
+      "phone": "(850) 364-3097",
+      "website": "https://www.aphandymanhomeservices.com/",
+      "blurb": "Owner-operated Tallahassee handyman handling painting, flooring, tile, cabinets, fixtures and deck repair.",
+      "source": "https://www.aphandymanhomeservices.com/"
+    },
+    {
+      "name": "Squatchworks LLC",
+      "services": ["handyman"],
+      "towns": ["tallahassee", "monticello"],
+      "phone": "(850) 408-2204",
+      "website": "https://squatchworksllc.com/",
+      "facebook": "https://facebook.com/squatchworks.2024",
+      "blurb": "Tallahassee handyman serving Leon, Gadsden, Jefferson and Wakulla counties with repairs, carpentry, tiling, decks and assembly at upfront pricing.",
+      "source": "https://squatchworksllc.com/"
+    },
+    {
+      "name": "Gumbati Handyman & Plumbing Services LLC",
+      "services": ["handyman"],
+      "towns": ["monticello", "tallahassee"],
+      "website": "https://gumbatihandymanservices.com/",
+      "blurb": "Monticello-based licensed general and plumbing contractor since 2017 doing kitchen, bath and room-addition work plus fixture installs.",
+      "source": "https://www.expertise.com/home-improvement/handyman/florida/tallahassee"
+    },
+    {
+      "name": "Casey Can Your Local Handyman",
+      "services": ["handyman", "tree-removal"],
+      "towns": ["live-oak"],
+      "phone": "(386) 590-0638",
+      "website": "https://caseylokancan.wixsite.com/mysite",
+      "facebook": "http://www.facebook.com/caseycanyourlocalhandyman",
+      "blurb": "All-purpose Live Oak handyman taking on hauling, non-hazardous tree removal, deck and fence repair, appliance installs and custom builds.",
+      "source": "https://caseylokancan.wixsite.com/mysite"
+    },
+    {
+      "name": "Handyman & Trade Services, LLC",
+      "services": ["handyman"],
+      "towns": ["live-oak"],
+      "phone": "(386) 365-9221",
+      "website": "https://handymanandtradeservices.com",
+      "blurb": "Licensed and insured handyman business in McAlpin serving Suwannee County since 1999.",
+      "source": "https://handymanandtradeservices.com"
+    },
+    {
+      "name": "It's All Good",
+      "services": ["handyman"],
+      "towns": ["live-oak"],
+      "phone": "(386) 658-2534",
+      "blurb": "Live Oak handyman service listed with about 21 years in business.",
+      "source": "https://www.yellowpages.com/live-oak-fl/handyman-services"
+    },
+    {
+      "name": "A & C Handyman Man & Pressure Washing",
+      "services": ["handyman"],
+      "towns": ["live-oak"],
+      "phone": "(352) 281-1575",
+      "blurb": "Live Oak business offering handyman and pressure washing services.",
+      "source": "https://www.yellowpages.com/live-oak-fl/handyman-services"
+    },
+    {
+      "name": "Stan'z Handyman Services",
+      "services": ["handyman"],
+      "towns": ["madison"],
+      "phone": "(850) 295-2337",
+      "blurb": "Handyman service based in Madison, FL.",
+      "source": "https://www.yellowpages.com/madison-fl/handyman-services"
+    },
+    {
+      "name": "Jay's Handyman & Exterior Cleaning",
+      "services": ["handyman"],
+      "towns": ["madison"],
+      "phone": "(850) 407-9519",
+      "website": "https://handymangreenvillefl.com",
+      "blurb": "Greenville, Madison County handyman offering home improvement work and exterior cleaning.",
+      "source": "https://www.yellowpages.com/madison-fl/handyman-services"
+    }
+  ]
+}
