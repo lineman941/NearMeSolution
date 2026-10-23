@@ -81,6 +81,10 @@ ICONS = {
  "handyman": '<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l6-6M14 4l6 6-9 9-6-6zM14 4l3-3 6 6-3 3"/></svg>',
 }
 
+GOOGLE_ADS_ID = "AW-11004301834"
+GTAG = f'''<script async src="https://www.googletagmanager.com/gtag/js?id={GOOGLE_ADS_ID}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{GOOGLE_ADS_ID}');</script>'''
+
 def esc(s): return html.escape(str(s), quote=True)
 
 def page(title, desc, body, path, schema=None, mcta=("/get-listed/","List your business free")):
@@ -91,7 +95,7 @@ def page(title, desc, body, path, schema=None, mcta=("/get-listed/","List your b
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="{url}">
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:type" content="website"><meta property="og:image" content="{DOMAIN}/img/og.jpg"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/img/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#1f6b3a">
-<link rel="stylesheet" href="/style.css">{ld}</head><body>
+<link rel="stylesheet" href="/style.css">{GTAG}{ld}</head><body>
 <header><div class="wrap"><a class="logo" href="/">{LOGO_SVG}Near<span>Me</span>Solutions</a><nav><a href="/stump-grinding/">Stumps</a><a href="/tree-removal/">Trees</a><a href="/mobile-mechanic/">Mechanic</a><a href="/handyman/">Handyman</a><a class="cta" href="/get-listed/">Get listed</a></nav></div></header>
 {body}
 <footer><div class="wrap">© {datetime.date.today().year} {SITE} · Perry, FL · <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a> · <a href="/get-listed/">List your business</a><br><small>Listings are compiled from public sources. Own one of these businesses? <a href="/get-listed/">Claim or correct it</a>.</small></div></footer><a class="mcta" href="{mcta_href}">{mcta_text}</a>
