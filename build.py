@@ -36,6 +36,7 @@ FEATURED = {
     "email": CONTACT_EMAIL,
     "phone": "(850) 295-3235",
     "facebook": "https://www.facebook.com/share/1C7qi4wj4y/",
+    "quote": "https://stump.nearmesolutions.pro/quote",
     "blurb": "Perry-based mobile crew: stump grinding, tree work, mobile auto repair and handyman jobs within 50 miles. Text-first, same-week scheduling, FSU/TCC student discounts.",
     "featured": True,
 }
@@ -108,6 +109,7 @@ def listing_card(b, town=None):
     meta.append(", ".join(SERVICES[s]["name"] for s in b["services"] if s in SERVICES))
     btns = []
     if b.get("phone"): btns.append(f'<a href="tel:{esc(b["phone"].replace(" ","").replace("(","").replace(")","").replace("-",""))}">{PHONE_SVG}Call {esc(b["phone"])}</a>')
+    if b.get("quote"): btns.append(f'<a href="{esc(b["quote"])}">Get a stump quote</a>')
     if b.get("email"): btns.append(f'<a href="mailto:{esc(b["email"])}?subject=Quote request via NearMeSolutions">Email for a quote</a>')
     if b.get("website"): btns.append(f'<a class="alt" href="{esc(b["website"])}" rel="nofollow noopener" target="_blank">Website</a>')
     if b.get("facebook"): btns.append(f'<a class="alt" href="{esc(b["facebook"])}" rel="nofollow noopener" target="_blank">Facebook</a>')
