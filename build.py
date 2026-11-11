@@ -69,6 +69,8 @@ form{display:grid;gap:10px;max-width:520px}input,select,textarea{font:inherit;pa
 footer{margin-top:60px;padding:28px 0 90px;border-top:1px solid var(--line);color:var(--mut);font-size:14px}footer a{color:var(--mut)}
 .crumbs{font-size:14px;color:var(--mut);margin:18px 0 0}.crumbs a{color:var(--mut)}
 .mcta{display:none}
+@media(max-width:860px){nav a{padding:8px 5px;font-size:14px;white-space:nowrap}nav a.cta{padding:8px 12px;margin-left:2px}.logo{font-size:21px}}
+@media(max-width:700px){nav a:not(.cta){display:none}}
 @media(max-width:640px){nav a:not(.cta){display:none}.hero{padding:30px 0 20px}.card{padding:18px}.btns a{flex:1 1 auto;justify-content:center}
 .mcta{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:20;background:var(--acc2);color:#17201a;text-align:center;padding:14px;border-radius:12px;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.2)}}
 """
@@ -97,7 +99,7 @@ def page(title, desc, body, path, schema=None, mcta=("/get-listed/","List your b
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="{url}">
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:type" content="website"><meta property="og:image" content="{DOMAIN}/img/og.jpg"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/img/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#1f6b3a">
 <link rel="stylesheet" href="/style.css">{GTAG}{ld}</head><body>
-<header><div class="wrap"><a class="logo" href="/">{LOGO_SVG}Near<span>Me</span>Solutions</a><nav><a href="/stump-grinding/">Stumps</a><a href="/tree-removal/">Trees</a><a href="/mobile-mechanic/">Mechanic</a><a href="/handyman/">Handyman</a><a class="cta" href="/get-listed/">Get listed</a></nav></div></header>
+<header><div class="wrap"><a class="logo" href="/">{LOGO_SVG}Near<span>Me</span>Solutions</a><nav><a href="/stump-grinding/">Stumps</a><a href="/tree-removal/">Trees</a><a href="/mobile-mechanic/">Mechanic</a><a href="/handyman/">Handyman</a><a href="/pros/">Local Pros</a><a class="cta" href="/get-listed/">Get listed</a></nav></div></header>
 {body}
 <footer><div class="wrap">© {datetime.date.today().year} {SITE} · Perry, FL · <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a> · <a href="/get-listed/">List your business</a><br><small>Listings are compiled from public sources. Own one of these businesses? <a href="/get-listed/">Claim or correct it</a>.</small></div></footer><a class="mcta" href="{mcta_href}">{mcta_text}</a>
 </body></html>"""
@@ -150,6 +152,7 @@ def build():
 <main class="wrap"><div class="grid">{tiles}</div>
 <h2>Browse by town</h2><div class="chips">{towns}</div>
 <h2>Featured local pro</h2>{listing_card(FEATURED)}
+<h2>Pest control and plumbing calls</h2><a class="tile" style="margin-bottom:14px" href="/pros/"><h3>Local Pros On Call</h3><p>One number for urgent pest control and plumbing, connecting homeowners to a licensed local company. Opening in Tampa Bay, Orlando, Jacksonville, Atlanta and Charlotte.</p></a>
 <p class="note">Run a service business in North Florida? <a href="/get-listed/">List it free</a>.</p></main>"""
     write("/", page(f"{SITE} — Local Pros Near Me in Perry & Tallahassee, FL", f"{TAGLINE}: stump grinding, tree removal, mobile mechanics and handymen with real phone numbers.", body, "/",
         {"@context":"https://schema.org","@type":"WebSite","name":SITE,"url":DOMAIN}))
