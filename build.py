@@ -184,6 +184,11 @@ def build():
     write("/get-listed/", page(f"Get Listed Free | {SITE}", "Add your North Florida service business to the Near Me Solutions directory — free basic listing, optional featured placement.", body, "/get-listed/"))
     write("/get-listed/thanks/", page(f"Thanks | {SITE}", "Listing request received.", '<div class="hero"><h1>Got it.</h1><p>We review every listing by hand and will email you when it\'s live, usually within a couple of days.</p><p><a href="/">← Back home</a></p></div>', "/get-listed/thanks/"))
 
+    # Local Pros On Call section (/pros/) — see pros.py and pros.json
+    import pros
+    for path, content in pros.pages(page, esc, PHONE_SVG):
+        write(path, content)
+
     (DIST / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{DOMAIN}{u}</loc></url>" for u in urls) + "</urlset>")
     (DIST / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n")
     (DIST / ".htaccess").write_text("ErrorDocument 404 /index.html\nOptions -Indexes\n")
