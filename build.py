@@ -152,7 +152,7 @@ def build():
 <main class="wrap"><div class="grid">{tiles}</div>
 <h2>Browse by town</h2><div class="chips">{towns}</div>
 <h2>Featured local pro</h2>{listing_card(FEATURED)}
-<h2>Pest control and plumbing calls</h2><a class="tile" style="margin-bottom:14px" href="/pros/"><h3>Local Pros On Call</h3><p>One number for urgent pest control and plumbing, connecting homeowners to a licensed local company. Opening in Tampa Bay, Orlando, Jacksonville, Atlanta and Charlotte.</p></a>
+<h2>Pest control, plumbing and tree service calls</h2><a class="tile" style="margin-bottom:14px" href="/pros/"><h3>Local Pros On Call</h3><p>One number for urgent pest control, plumbing and tree service, connecting homeowners to a licensed local company. Opening across Florida and in Atlanta and Charlotte.</p></a>
 <p class="note">Run a service business in North Florida? <a href="/get-listed/">List it free</a>.</p></main>"""
     write("/", page(f"{SITE} — Local Pros Near Me in Perry & Tallahassee, FL", f"{TAGLINE}: stump grinding, tree removal, mobile mechanics and handymen with real phone numbers.", body, "/",
         {"@context":"https://schema.org","@type":"WebSite","name":SITE,"url":DOMAIN}))

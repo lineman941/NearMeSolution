@@ -29,7 +29,12 @@ SERVICES = {
     "emergency-plumber": {"name": "Emergency Plumber", "pro": "plumber", "trade": "plumbing",
         "blurb": "Leaks, burst pipes, drain and sewer backups, water heaters.",
         "needs": ["Leak or burst pipe", "Drain or sewer backup", "Water heater", "Other plumbing"]},
+    "tree-service": {"name": "Tree Service", "pro": "tree service company", "trade": "tree service",
+        "blurb": "Tree trimming, tree removal, storm damage and stump grinding.",
+        "needs": ["Tree trimming", "Tree removal", "Storm damage or fallen tree", "Stump grinding"]},
 }
+# Service/area pairs we do not offer (Need A Hand Mobile covers tree work around Tallahassee itself).
+SKIP = {"tree-service/tallahassee"}
 METROS = {
     "tampa":        {"name": "Tampa Bay", "st": "FL", "area": "Tampa, St. Petersburg, Clearwater, Brandon and Land O' Lakes"},
     "orlando":      {"name": "Orlando", "st": "FL", "area": "Orlando, Kissimmee, Winter Park and Longwood"},
@@ -92,6 +97,8 @@ def pages(page, esc, phone_svg):
     tiles = ""
     for s, S in SERVICES.items():
         for m, M in METROS.items():
+            if f"{s}/{m}" in SKIP:
+                continue
             live = f"{s}/{m}" in active
             badge = '<span class="pros-live">Taking calls</span>' if live else '<span class="pros-open">Area open for a partner</span>'
             tiles += (f'<a class="tile" href="/pros/{s}/{m}/"><h3>{esc(S["name"])} in {esc(M["name"])}</h3>'
@@ -100,25 +107,27 @@ def pages(page, esc, phone_svg):
                 if active else
                 '<p class="note">We are signing up partner companies now. An area starts taking calls as soon as it has one.</p>')
     body = f"""<div class="crumbs"><a href="/">Home</a> › Local Pros On Call</div>
-<div class="hero"><h1>Local Pros On Call</h1><p>One number for urgent pest control and plumbing. We ask a few quick questions, then put you straight through to a licensed local company that covers your ZIP code. Free to call, no obligation.</p>{hub_call}</div>
+<div class="hero"><h1>Local Pros On Call</h1><p>One number for urgent pest control, plumbing and tree service. We ask a few quick questions, then put you straight through to a licensed local company that covers your ZIP code. Free to call, no obligation.</p>{hub_call}</div>
 <h2>How it works</h2>
 <ol class="pros-steps"><li><b>You call</b>Tell us what is wrong and your ZIP code. It takes about a minute.</li><li><b>We connect you</b>Your call goes to one local company that covers your area, not a list of five.</li><li><b>They quote and schedule</b>You deal with the company directly. We never charge homeowners.</li></ol>
 <h2>Service areas</h2><div class="grid">{tiles}</div>
-<h2>Own a pest control or plumbing company?</h2>
+<h2>Own a pest control, plumbing or tree service company?</h2>
 <p class="note">We send screened, live phone calls from homeowners in your ZIP codes. ${PRICE} per qualified call, first {FREE_CALLS} free, no contract. <a href="/pros/partners/">See how the partner program works</a>.</p>
 {DISCLOSURE}"""
-    add("/pros/", "Local Pros On Call — Urgent Pest Control & Plumbing | Near Me Solutions",
-        "Call one number and get connected to a licensed local pest control or plumbing company that covers your ZIP code.",
+    add("/pros/", "Local Pros On Call — Urgent Pest Control, Plumbing & Tree Service | Near Me Solutions",
+        "Call one number and get connected to a licensed local pest control, plumbing or tree service company that covers your ZIP code.",
         body, call_mcta if active else biz_mcta)
 
     # ---- service x metro -------------------------------------------------
     for s, S in SERVICES.items():
         for m, M in METROS.items():
             key = f"{s}/{m}"
+            if key in SKIP:
+                continue
             place = f'{M["name"]}, {M["st"]}'
             crumbs = f'<div class="crumbs"><a href="/">Home</a> › <a href="/pros/">Local Pros On Call</a> › {esc(S["name"])} in {esc(M["name"])}</div>'
-            others = "".join(f'<a href="/pros/{s}/{o}/">{esc(O["name"])}</a>' for o, O in METROS.items() if o != m)
-            other_s = "".join(f'<a href="/pros/{o}/{m}/">{esc(O["name"])}</a>' for o, O in SERVICES.items() if o != s)
+            others = "".join(f'<a href="/pros/{s}/{o}/">{esc(O["name"])}</a>' for o, O in METROS.items() if o != m and f"{s}/{o}" not in SKIP)
+            other_s = "".join(f'<a href="/pros/{o}/{m}/">{esc(O["name"])}</a>' for o, O in SERVICES.items() if o != s and f"{o}/{m}" not in SKIP)
             foot = (f'<h2>{esc(S["name"])} in other areas</h2><div class="chips">{others}</div>'
                     f'<h2>Other services in {esc(M["name"])}</h2><div class="chips">{other_s}</div>{DISCLOSURE}')
             if key in active:
@@ -165,7 +174,7 @@ document.getElementById("pros-lead").addEventListener("submit",async function(ev
     opts_s = "".join(f'<option value="{s}">{esc(S["name"])}</option>' for s, S in SERVICES.items())
     opts_m = "".join(f'<option value="{m}">{esc(M["name"])}, {M["st"]}</option>' for m, M in METROS.items())
     body = f"""<div class="crumbs"><a href="/">Home</a> › <a href="/pros/">Local Pros On Call</a> › Partner program</div>
-<div class="hero"><h1>Live calls from homeowners in your ZIP codes</h1><p>Local Pros On Call is launching in Tampa Bay, Orlando, Jacksonville, Atlanta and Charlotte. Our ads reach homeowners who need a pest control company or a plumber now. We screen every caller by phone and transfer the live call to your line. ${PRICE} per qualified call. First {FREE_CALLS} free. No contract.</p></div>
+<div class="hero"><h1>Live calls from homeowners in your ZIP codes</h1><p>Local Pros On Call is launching across Florida and in Atlanta and Charlotte. Our ads reach homeowners who need a pest control company, a plumber or a tree service now. We screen every caller by phone and transfer the live call to your line. ${PRICE} per qualified call. First {FREE_CALLS} free. No contract.</p></div>
 <ol class="pros-steps"><li><b>We screen the caller</b>Real homeowner or decision-maker, inside your ZIP codes, needs service within 7 days.</li><li><b>You get the live call</b>Transferred to the number you choose while the caller is still on the line.</li><li><b>You pay only for qualified calls</b>Billed weekly. If the recording shows a call did not qualify, you do not pay for it.</li></ol>
 <h2>The terms, in plain language</h2>
 <ul class="pros-terms"><li><b>${PRICE} per qualified call.</b> Your first {FREE_CALLS} qualified calls are free.</li><li><b>Qualified means all three:</b> homeowner or authorized decision-maker, inside your service area, needs service within 7 days.</li><li><b>Exclusive.</b> While you are active, calls from your ZIP codes go to you and nobody else.</li><li><b>No contract and no minimum.</b> Cancel any time by email.</li><li><b>Disputes.</b> Tell us within 48 hours and we review the recording. If it did not qualify, it is not billed.</li><li><b>Your customers stay yours.</b> We do not share a caller's details with any other company.</li></ul>
@@ -181,7 +190,7 @@ document.getElementById("pros-lead").addEventListener("submit",async function(ev
 <button type="submit">Claim my area — first {FREE_CALLS} calls free</button></form>
 <p class="pros-small" style="margin-top:12px">We confirm your start date by email once your area is live. Questions: <a href="mailto:{EMAIL}">{EMAIL}</a>. Local Pros On Call, {ADDRESS}.</p>
 <script>(function(){{var q=new URLSearchParams(location.search),s=q.get("service"),m=q.get("metro");if(s)document.getElementById("pp-service").value=s;if(m)document.getElementById("pp-metro").value=m;}})();</script>"""
-    add("/pros/partners/", "Partner Program — Live Homeowner Calls for Pest & Plumbing Companies | Near Me Solutions",
+    add("/pros/partners/", "Partner Program — Live Homeowner Calls for Pest, Plumbing & Tree Companies | Near Me Solutions",
         f"Screened, live calls from homeowners in your ZIP codes. ${PRICE} per qualified call, first {FREE_CALLS} free, no contract.", body, biz_mcta)
     add("/pros/partners/thanks/", "Thanks | Local Pros On Call", "Partner sign-up received.",
         '<div class="hero"><h1>Got it.</h1><p>We review every sign-up by hand and will email you to confirm your ZIP codes and start date.</p><p><a href="/pros/">← Back to Local Pros On Call</a></p></div>', biz_mcta)
