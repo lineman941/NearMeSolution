@@ -36,6 +36,15 @@ METROS = {
     "jacksonville": {"name": "Jacksonville", "st": "FL", "area": "Jacksonville, Orange Park, Fruit Cove and St. Augustine"},
     "atlanta":      {"name": "Atlanta", "st": "GA", "area": "Atlanta, Marietta, Alpharetta, Smyrna and Duluth"},
     "charlotte":    {"name": "Charlotte", "st": "NC", "area": "Charlotte, Matthews, Mint Hill and Monroe"},
+    "fort-myers":   {"name": "Fort Myers", "st": "FL", "area": "Fort Myers, Cape Coral, Lehigh Acres and Estero"},
+    "sarasota":     {"name": "Sarasota", "st": "FL", "area": "Sarasota, Bradenton, Parrish and Venice"},
+    "lakeland":     {"name": "Lakeland", "st": "FL", "area": "Lakeland, Winter Haven, Bartow and Plant City"},
+    "daytona":      {"name": "Daytona Beach", "st": "FL", "area": "Daytona Beach, Port Orange, Ormond Beach and South Daytona"},
+    "melbourne":    {"name": "Melbourne", "st": "FL", "area": "Melbourne, Palm Bay, Viera and Rockledge"},
+    "ocala":        {"name": "Ocala", "st": "FL", "area": "Ocala, Belleview, Silver Springs and Dunnellon"},
+    "gainesville":  {"name": "Gainesville", "st": "FL", "area": "Gainesville, Alachua, Newberry and High Springs"},
+    "tallahassee":  {"name": "Tallahassee", "st": "FL", "area": "Tallahassee, Crawfordville, Quincy and Havana"},
+    "pensacola":    {"name": "Pensacola", "st": "FL", "area": "Pensacola, Gulf Breeze, Pace and Milton"},
 }
 
 STYLE = """<style>
